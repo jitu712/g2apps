@@ -1,3 +1,4 @@
+<app-loader *ngIf="!newsItems"></app-loader>
 <div *ngIf="newsItems">
     <div *ngFor="let newsItem of newsItems.response.results">
       <mat-card (click)="openLink(newsItem.webUrl)">

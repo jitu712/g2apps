@@ -9,13 +9,13 @@ export class AppDashboardComponent {
   apps = [/* {
     name: 'To Do',
     route: '/todo'
-  }, */ {
+  },  {
     name: 'Timeline',
     route: '/timeline'
   }/* , {
     name: 'Bhagavad Gita',
     route: '/gita'
-  } */, {
+  } ,*/ {
     name: 'NEWS',
     route: '/news'
   }
