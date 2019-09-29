@@ -1,0 +1,13 @@
+<div *ngIf="newsItems">
+    <div *ngFor="let newsItem of newsItems.response.results">
+      <mat-card (click)="openLink(newsItem.webUrl)">
+        <mat-chip-list
+          ><mat-chip color="primary" selected>{{
+            newsItem.sectionName
+          }}</mat-chip></mat-chip-list
+        >
+        <mat-card-content>{{ newsItem.webTitle }}</mat-card-content>
+        <mat-card-subtitle>{{ newsItem.webPublicationDate | timeElapsed }}</mat-card-subtitle>
+      </mat-card>
+    </div>
+  </div>

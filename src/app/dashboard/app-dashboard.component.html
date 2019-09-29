@@ -1,0 +1,19 @@
+<!-- <h3 align="center">Apps</h3>
+<div class="myapps">
+  <mat-grid-list cols="2">
+    <mat-grid-tile *ngFor="let app of apps" routerLink="{{ app.route }}">
+
+          {{ app.name }}
+
+    </mat-grid-tile>
+  </mat-grid-list> -->
+
+  <mat-list>
+    <!-- <h3 mat-subheader>Top Apps</h3> -->
+    <mat-list-item *ngFor="let app of apps" routerLink="{{ app.route }}">
+      <mat-icon mat-list-icon>rss_feed</mat-icon>
+      <h4 mat-line>{{app.name}}</h4>
+      <!-- <p mat-line> {{app.updated | date}} </p> -->
+    </mat-list-item>
+  </mat-list>
+<!-- </div> -->
